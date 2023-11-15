@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(255, 0, 0); */
+}
+body {
+    background: #F9F8FD;
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --text-color: #22253B;
+}
+
+/* HEADER */
+header > .header {
+    position: sticky;
+    top: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%;
+    height: 51px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 75px;
+    backdrop-filter: blur(7.5px);
+    color: var(--text-color);
+    font-weight: 400;
+    align-items: center;
+    z-index: 1000;
+    top: 0;
+}
+
+.logo-list-nav > .ul-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    column-gap: 60px;
+    flex-wrap: nowrap;
+}
+li > .link-nav {
+    transition: 0.5s;
+}
+li > .link-nav:hover {
+    color: #00a2dc;
+}
+.header > .btns-nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-right: 20px;
+}
+.logoMain {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+    font-family: 'Monoton', sans-serif;
+    margin-left: 20px;
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+}
+.style-logo-word {
+    color: #38BFF2;
+    font-family: 'Monoton', sans-serif;
+    font-weight: 700;
+}
+.btns-nav > .btn {
+    padding: 10px;
+    background: #38BFF2;
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    transition: 0.5s all ease-out;
+    font-size: 12px;
+}
+.btns-nav > .btn:hover {
+    background: #00a2dc;
+    cursor: pointer;
+}
+
+/* MAIN */
+div.main {
+    height: 600px;
+    width: 100%;
+    top: -60px;
+    position: relative;
+    padding-top: 100px;
+    background: url(../image/MainBackground.png) no-repeat right top;
+}
+.box-main {
+    margin-left: 11%;
+}
+.text-main {
+    width: 600px;
+}
+.p-intro-main {
+    font-size: 46px;
+    line-height: 46px;
+    margin-bottom: 78px;
+}
+.line {
+    height: 1px;
+    width: 360px;
+    background: #DEDEDE;
+}
+.overtext-main {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 23px;
+}
+.btn-main {
+    width: 300px;
+    height: 60px;
+    background: #F15525;
+    border-radius: 82px;
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+    transition: 0.4s;
+}
+.btn-main:hover {
+    background: #fd7147;
+    cursor: pointer;
+}
+.btn-main-2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.6px;
+    font-weight: 100;
+}
+.bx-right-top-arrow-circle {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/* Section whatdoyoulearn */
+
+.section-whatdoyoulearn {
+    height: 1412px;
+}
+.section-whatdoyoulearn > div.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-whatdoyoulearn > div.container > p {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 46px;
+    line-height: 46px;
+    margin-bottom: 35px;
+}
+.section-whatdoyoulearn > div.container > div.div-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EAF2F5;
+    border-radius: 48px;
+    padding: 20px 150px 20px 150px;
+}
+
+.section-whatdoyoulearn > div.container > div > div.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-whatdoyoulearn > div.container > div.div-flex > div.container-a {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 60px;
+}
+.container-a > .container-a-grid {
+    width: 420px;
+}
+div.container-a > div > a.link_subject {
+    border-radius: 44px;
+    padding: 10px;
+    display: inline-block;
+    margin: 5px 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.box1-link-subject {
+    background: #FFB359;
+}
+.box2-link-subject {
+    background: #4BD071;
+}
+.box3-link-subject {
+    background: #AF93FF;
+}
+.box4-link-subject {
+    background: #e0f45b;
+}
+.box5-link-subject {
+    background: rgb(248, 91, 91);
+}
+.box6-link-subject {
+    background: #93fffb;
+}
+.box7-link-subject {
+    background: #e693ff;
+}
+.section-addition-p {
+    margin-top: 26px;
+    padding-left: 10px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
