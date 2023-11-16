@@ -5,7 +5,7 @@
     list-style: none;
     color: black;
     box-sizing: border-box;
-    /* border: 1px solid rgb(255, 0, 0); */
+    border: 1px solid rgb(255, 0, 0);
 }
 body {
     background: #F9F8FD;
@@ -225,3 +225,26 @@ div.container-a > div > a.link_subject {
     font-size: 14px;
 }
 
+/* container-study-X */
+
+.container-study-X {
+    height: 1412px;
+}
+.container-study-X > div.div-flex-study-x {
+    width: 80%;
+    height: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-top: 100px;
+}
+.box-elem-flex {
+    background-color: #22253B;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+}
