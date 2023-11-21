@@ -240,6 +240,7 @@ div.container-a > div > a.link_subject {
     flex-wrap:wrap;
     margin-top: 100px;
     gap: 27px;
+    
 }
 .box-elem-flex {
     display: flex;
@@ -263,4 +264,13 @@ div.container-a > div > a.link_subject {
 .p-p-box-elem {
     font-weight: 400;
     line-height: 15px;
+}
+.container-study-X-h2 {
+    text-align: center;
+    color: #22253B;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    margin-top: 40px;
 }
