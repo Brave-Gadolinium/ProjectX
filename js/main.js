@@ -5,3 +5,4 @@ window.addEventListener('unload', e => cords.forEach(cord => localStorage[cord] 
 window.scroll(...cords.map(cord => localStorage[cord]));
 
 let a = 2
+let b = 4
