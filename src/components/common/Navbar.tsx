@@ -13,6 +13,8 @@ import { useScrollTrigger } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useTheme, useMediaQuery } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
+import "../../assets/style/logo.css";
+import "../../assets/style/navbar.css";
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   backgroundColor: "rgba(255, 255, 255, 0.09)",
@@ -82,7 +84,7 @@ export const Navbar = () => {
               fontFamily: "monospace",
             }}
           >
-            Teacher App
+            <span className="mainLogoNavbar">Teacher App</span>
           </Typography>
 
           {/* Меню на десктопе */}

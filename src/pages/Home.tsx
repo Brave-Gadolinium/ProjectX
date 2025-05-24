@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
 import { fetchStudents } from "../services/api";
 import { StudentCard } from "../components/students/StudentCard";
-import "../assets/loader.css";
+import "../assets/style/loader.css";
+import "../assets/style/boxEffects.css";
 
 export const Home = () => {
   const [students, setStudents] = useState<any[]>([]);
@@ -34,11 +35,11 @@ export const Home = () => {
       });
   }, []);
 
-  // Показ лоадера на 5 секунд
+  // Показ лоадера на 10 секунд
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoader(false);
-    }, 5000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -47,9 +48,23 @@ export const Home = () => {
     <Box sx={{ p: 4 }}>
       {/* Loader - полный экран */}
       {showLoader && (
-        <div className="loader-container">
-          <div className="loader"></div>
-        </div>
+        <>
+          <div className="loader-container">
+            <div className="loader"></div>
+            <ul className="background">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </>
       )}
 
       {!showLoader && (
@@ -64,7 +79,15 @@ export const Home = () => {
           {/* Статистика */}
           <Grid container spacing={3} mb={4}>
             <Grid item xs={12} sm={4}>
-              <Card elevation={3} sx={{ textAlign: "center", p: 3 }}>
+              <Card
+                elevation={3}
+                sx={{ textAlign: "center", p: 3 }}
+                className="studentCardEffect"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
                 <Typography variant="h5" color="primary.main">
                   {students.length}
                 </Typography>
@@ -72,17 +95,35 @@ export const Home = () => {
               </Card>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Card elevation={3} sx={{ textAlign: "center", p: 3 }}>
+              <Card
+                elevation={3}
+                sx={{ textAlign: "center", p: 3 }}
+                className="studentCardEffect"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
                 <Typography variant="h5" color="success.main">
-                  ...
+                  100+
                 </Typography>
                 <Typography color="text.secondary">Уроков</Typography>
               </Card>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Card elevation={3} sx={{ textAlign: "center", p: 3 }}>
+              <Card
+                elevation={3}
+                sx={{ textAlign: "center", p: 3 }}
+                className="studentCardEffect"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
                 <Typography variant="h5" color="secondary.main">
-                  ...
+                  100+
                 </Typography>
                 <Typography color="text.secondary">Материалов</Typography>
               </Card>

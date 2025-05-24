@@ -1,0 +1,37 @@
+.mainLogoNavbar {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: none;
+  position: relative;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #f1f1f1 0px,
+    #f1f1f1 144px,
+    rgb(189, 189, 189) 144px,
+    rgb(180, 180, 180) 288px,
+    #bebebe 288px,
+    #bebebe 432px
+  );
+  background-size: 250%;
+  background-position: 0%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: stripeAnimation 2s linear infinite;
+  animation: stripeAnimation 2s linear infinite;
+  animation-play-state: running;
+  /* -webkit-animation-play-state: paused; */
+  /* animation-play-state: paused; */
+}
+
+.mainLogoNavbar:hover {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@keyframes stripeAnimation {
+  100% {
+    background-position: 165%;
+  }
+}

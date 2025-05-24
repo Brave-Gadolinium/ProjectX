@@ -1,0 +1,100 @@
+.studentCardEffect {
+  position: relative;
+  display: inline-block;
+  color: #ff00c642;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+.studentCardEffect:hover {
+  background: #e600ff00;
+  color: #050801;
+  box-shadow: 0 0 5px #ff00c642, 0 0 25px #ff00c642, 0 0 50px #ff00c642,
+    0 0 200px #ff00c642;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.studentCardEffect:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+.studentCardEffect:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+.studentCardEffect:hover span {
+  position: absolute;
+  display: block;
+}
+.studentCardEffect span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e600ff);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.studentCardEffect span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #e600ff);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.studentCardEffect span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #e600ff);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.studentCardEffect span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #e600ff);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
