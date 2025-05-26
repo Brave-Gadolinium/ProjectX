@@ -6,7 +6,7 @@ import interactionPlugin from "@fullcalendar/interaction";
 import { useLessons } from "../../hooks/useLessons";
 
 export const LessonCalendar = () => {
-  const lessons = useLessons("2023-10");
+  const lessons = useLessons();
 
   const handleDateClick = (arg: any) => {
     alert(`Clicked on date: ${arg.dateStr}`);

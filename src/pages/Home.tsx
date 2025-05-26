@@ -45,7 +45,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <Box sx={{ p: 4 }}>
+    <Box sx={{ p: 10, margin: 0 }}>
       {/* Loader - полный экран */}
       {showLoader && (
         <>
@@ -131,7 +131,7 @@ export const Home = () => {
           </Grid>
 
           {/* Список учеников */}
-          <Typography variant="h5" gutterBottom>
+          <Typography variant="h5" gutterBottom sx={{ mb: 4 }}>
             Список учеников
           </Typography>
           {loading ? (

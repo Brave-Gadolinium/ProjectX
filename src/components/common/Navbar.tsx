@@ -22,9 +22,9 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   boxShadow: "none",
 
   backdropFilter: "blur(10px)",
-  transition: "background-color 0.1s ease-in-out",
+  transition: "background-color 0.5s ease-in-out",
   "&.transparent": {
-    backgroundColor: "#09c9ff !important ",
+    backgroundColor: "#1976fb !important ",
     boxShadow: "none",
     color: "white",
   },
