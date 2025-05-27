@@ -10,6 +10,5 @@ export const useLessons = (month: string) => {
       .catch((err) => console.error("Ошибка загрузки уроков:", err));
   }, [month]);
 
-  console.log(lessons);
   return lessons;
 };
