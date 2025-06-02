@@ -1,6 +1,5 @@
-// src/components/StudentList.tsx
-import React, { useEffect, useState } from "react";
-import { Grid, Typography } from "@mui/material";
+import { useEffect, useState } from "react";
+import { Grid, Typography, Box } from "@mui/material";
 import { fetchStudents } from "../../services/api";
 import { StudentCard } from "./StudentCard";
 
@@ -17,9 +16,9 @@ export const StudentList = () => {
     <Grid container spacing={2}>
       {students.length > 0 ? (
         students.map((student) => (
-          <Grid item xs={12} sm={6} md={4} key={student.id}>
+          <Box>
             <StudentCard student={student} />
-          </Grid>
+          </Box>
         ))
       ) : (
         <Typography>Нет учеников</Typography>

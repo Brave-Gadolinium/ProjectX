@@ -7,7 +7,7 @@ export const AddStudentForm = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: any) => {
     console.log(data);
     // await addStudent(data);
     alert("Ученик добавлен!");
@@ -21,7 +21,8 @@ export const AddStudentForm = () => {
           placeholder="Имя"
           className="p-2 border rounded w-full"
         />
-        {errors.name && <p className="text-red-500">{errors.name.message}</p>}
+        {/* {errors.name && <p className="text-red-500">{errors.name.message}</p>} */}
+        {errors.name && <p className="text-red-500">Ошибка</p>}
       </div>
 
       <div>
@@ -36,7 +37,8 @@ export const AddStudentForm = () => {
           placeholder="Email"
           className="p-2 border rounded w-full"
         />
-        {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+        {/* {errors.email && <p className="text-red-500">{errors.email.message}</p>} */}
+        {errors.email && <p className="text-red-500">Ошибка</p>}
       </div>
 
       <button type="submit" className="bg-blue-500 text-white p-2 rounded">

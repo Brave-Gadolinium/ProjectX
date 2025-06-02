@@ -8,15 +8,16 @@ import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import Box from "@mui/material/Box";
 import { useScrollTrigger } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useTheme, useMediaQuery } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
-import "../../assets/style/logo.css";
-import "../../assets/style/navbar.css";
+// import "../../assets/style/logo.css";
+// import "../../assets/style/navbar.css";
 
-const StyledAppBar = styled(AppBar)(({ theme }) => ({
+// const StyledAppBar = styled(AppBar)(({ theme }) => ({
+
+const StyledAppBar = styled(AppBar)(({}) => ({
   backgroundColor: "rgba(255, 255, 255, 0.09)",
   color: "black",
   boxShadow: "none",
@@ -32,6 +33,7 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
 
 interface EnhancedAppBarProps {
   position?: "fixed" | "absolute" | "sticky" | "relative" | "static";
+  children: any;
 }
 
 function ElevationScroll(props: EnhancedAppBarProps) {

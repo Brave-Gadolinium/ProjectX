@@ -1,4 +1,3 @@
-import React from "react";
 import { PerformanceChart } from "../components/analytics/PerformanceChart";
 
 export const AnalyticsPage = () => {

@@ -1,4 +1,3 @@
-import React from "react";
 import { FileUploader } from "../components/materials/FileUploader";
 
 export const MaterialsPage = () => {

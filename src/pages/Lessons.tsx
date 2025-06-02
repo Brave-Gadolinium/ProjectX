@@ -1,4 +1,3 @@
-import React from "react";
 import { LessonCalendar } from "../components/lessons/LessonCalendar";
 import { DraggableLesson } from "../components/lessons/DraggableLesson";
 

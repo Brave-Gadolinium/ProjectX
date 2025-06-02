@@ -1,11 +1,10 @@
-// src/components/lessons/LessonCalendar.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import { useLessons } from "../../hooks/useLessons";
 import { LessonModal } from "./LessonModal";
-import { isSameDay } from "../../utils/helpers";
+// import { isSameDay } from "../../utils/helpers";
 
 export const LessonCalendar = () => {
   const lessons = useLessons("2025-05");

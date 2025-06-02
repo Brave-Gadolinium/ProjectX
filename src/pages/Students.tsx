@@ -1,15 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 // import { AddStudentForm } from "../components/students/AddStudentForm";
 import { getStudents } from "../services/api";
 // import { StudentList } from "../components/students/StudentList";
-import {
-  Card,
-  CardContent,
-  Typography,
-  Grid,
-  Box,
-  Divider,
-} from "@mui/material";
+import { Typography, Grid, Box, Divider } from "@mui/material";
 import { StudentCard } from "../components/students/StudentCard";
 
 export const StudentsPage = () => {
@@ -32,7 +25,7 @@ export const StudentsPage = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const data = await getStudents();
+        const data: any = await getStudents();
         setStudents(data);
       } catch (error) {
         console.error("Ошибка загрузки учеников:", error);
@@ -71,9 +64,9 @@ export const StudentsPage = () => {
           <Divider sx={{ mb: 2 }} />
           <Grid container spacing={2}>
             {groupData.map((student) => (
-              <Grid item xs={12} sm={6} md={4} key={student.id}>
+              <Box>
                 <StudentCard student={student} />
-              </Grid>
+              </Box>
             ))}
           </Grid>
         </Box>

@@ -1,10 +1,10 @@
 // src/pages/Home.tsx
-import React, { useEffect, useState } from "react";
-import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
+import { useEffect, useState } from "react";
+import { Box, Grid, Typography, Card } from "@mui/material";
 import { fetchStudents } from "../services/api";
 import { StudentCard } from "../components/students/StudentCard";
-import "../assets/style/loader.css";
-import "../assets/style/boxEffects.css";
+// import "../assets/style/loader.css";
+// import "../assets/style/boxEffects.css";
 
 export const Home = () => {
   const [students, setStudents] = useState<any[]>([]);
@@ -78,7 +78,7 @@ export const Home = () => {
 
           {/* Статистика */}
           <Grid container spacing={3} mb={4}>
-            <Grid item xs={12} sm={4}>
+            <Box>
               <Card
                 elevation={3}
                 sx={{ textAlign: "center", p: 3 }}
@@ -93,8 +93,8 @@ export const Home = () => {
                 </Typography>
                 <Typography color="text.secondary">Учеников</Typography>
               </Card>
-            </Grid>
-            <Grid item xs={12} sm={4}>
+            </Box>
+            <Box>
               <Card
                 elevation={3}
                 sx={{ textAlign: "center", p: 3 }}
@@ -110,8 +110,8 @@ export const Home = () => {
                 </Typography>
                 <Typography color="text.secondary">Уроков</Typography>
               </Card>
-            </Grid>
-            <Grid item xs={12} sm={4}>
+            </Box>
+            <Box>
               <Card
                 elevation={3}
                 sx={{ textAlign: "center", p: 3 }}
@@ -127,7 +127,7 @@ export const Home = () => {
                 </Typography>
                 <Typography color="text.secondary">Материалов</Typography>
               </Card>
-            </Grid>
+            </Box>
           </Grid>
 
           {/* Список учеников */}
@@ -139,9 +139,9 @@ export const Home = () => {
           ) : students.length > 0 ? (
             <Grid container spacing={2}>
               {students.map((student) => (
-                <Grid item xs={12} sm={6} md={4} key={student.id}>
+                <Box>
                   <StudentCard student={student} />
-                </Grid>
+                </Box>
               ))}
             </Grid>
           ) : (

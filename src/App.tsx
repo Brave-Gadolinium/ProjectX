@@ -1,5 +1,3 @@
-// src/App.tsx
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { StudentsPage } from "./pages/Students";
@@ -9,7 +7,7 @@ import { AnalyticsPage } from "./pages/Analytics";
 import { Navbar } from "./components/common/Navbar";
 import { Box } from "@mui/material";
 import { Footer } from "./components/common/Footer";
-import "./App.css";
+// import "./App.css";
 
 export const App = () => {
   return (

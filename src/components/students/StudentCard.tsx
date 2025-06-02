@@ -1,9 +1,8 @@
-// src/components/StudentCard.tsx
-import React from "react";
 import { Box, Card, Typography, Avatar } from "@mui/material";
-import "../../assets/style/studentCard.css";
+// import "../../assets/style/studentCard.css";
+// export const StudentCard = ({ student }: StudentProps) => {
 
-export const StudentCard = ({ student }: StudentProps) => {
+export const StudentCard = ( student: any ) => {
   return (
     <Card className="holographic-container " sx={{ width: "335px", margin: 1 }}>
       <Box
